@@ -1,0 +1,20 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Python nutton script</title>
+</head>
+	<body>
+
+	 <h1>Execute Page</h1>
+	     <button onclick=" location.href='{% url 'blog-output' %}'  "    >Execute script</button>
+
+	{% if data %}
+	
+		{{data | safe}}
+	
+	{% endif %}
+
+	</body>
+</html>
